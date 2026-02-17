@@ -1,0 +1,20 @@
+<html>
+                <head>
+                    <title></title>
+                </head>
+                <body style="height: auto; min-height: auto;">
+                    Dear {{{Recipient.Name}}},<br />
+                    <br />
+                    Hope you're doing well! <br />
+                    <br />
+                    I noticed that you'd previously applied for a {{{RecruitmentPosting.PostingTitle}}} role at {{{Organization.Name}}}, and I wanted to reach out about a new opening that might be a great fit for you.<br />
+                    <br />
+                    Based on your background and what I saw in your application, I think you could be a strong candidate.<br />
+                    <br />
+                    If you're interested in learning more and applying, you can find the job posting <a href="&lt;site-url>/s/recruitmentposting/{{{RecruitmentPosting.Id}}}">here</a>.<br />
+                    <br />
+                    Sincerely,<br />
+                    {{{Sender.Name}}}<br />
+                    {{{Organization.Name}}}, {{{Sender.Department}}}
+                </body>
+            </html>
