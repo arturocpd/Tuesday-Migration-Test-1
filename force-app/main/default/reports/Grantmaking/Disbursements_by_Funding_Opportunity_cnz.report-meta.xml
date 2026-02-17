@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>IndividualApplication.FundingAward.FundingDisbursement$Amount</field>
+    </columns>
+    <columns>
+        <field>IndividualApplication.FundingAward.FundingDisbursement$Status</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>IndividualApplication.FundingAward$FundingOpportunity</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Disbursements by Funding Opportunity</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Individual_Applications_with_Funding_Awards__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>IndividualApplication$AppliedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
